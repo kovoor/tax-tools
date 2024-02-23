@@ -1,5 +1,4 @@
 import TagSEO from "@/components/TagSEO"
-import { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
@@ -7,12 +6,6 @@ import { useState } from "react"
 import TaxCalculator from "../components/TaxCalculator"
 
 const inter = Inter({ subsets: ["latin"] })
-
-export const metadata: Metadata = {
-  verification: {
-    google: "aWF77SEz5IwWJG1DXw6JZ_LkFIIkVFWh_3LQNKvjtNQ",
-  },
-}
 
 export default function Home() {
   useState

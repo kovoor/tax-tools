@@ -54,7 +54,7 @@ const TagSEO: React.FC<TagSEOProps> = ({
       {/* METAS */}
       <meta name="description" key="description" content={description || defaults.description} />
       <meta name="keywords" key="keywords" content={keywords || defaults.keywords} />
-
+      <meta name="google-site-verification" content="1FmwoT7FgFYVJzmu2dVazEzDU-rGf9sRBaWljpJt8go" />
       {/* OG METAS */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={og?.title || defaults.og.title} />
