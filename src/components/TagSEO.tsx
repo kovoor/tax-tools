@@ -65,7 +65,7 @@ const TagSEO: React.FC<TagSEOProps> = ({
       <meta property="og:image" key="og:image" content={og?.image || defaults.og.image} />
       <meta property="og:url" content={og?.url || defaults.og.url} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@marc_louvion" />
+      <meta name="twitter:creator" content="@jakekovoor" />
 
       {/* CANONICAL TAG */}
       <link rel="canonical" href={`https://${domainName}/${canonicalSlug}`} />
