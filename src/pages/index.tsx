@@ -1,5 +1,7 @@
+import TagSEO from "@/components/TagSEO"
 import { Inter } from "next/font/google"
 import Image from "next/image"
+import Link from "next/link"
 import { useState } from "react"
 import TaxCalculator from "../components/TaxCalculator"
 
@@ -11,10 +13,19 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-14 lg:p-24 ${inter.className}`}
     >
+      <TagSEO
+        title={`LHDN Tax Calculator - How to Calculate (CP502) Increase in Tax If the Amended Estimated Tax`}
+        canonicalSlug="home"
+        keywords="lhdn calculate cp502 increase in tax"
+        description="This is an open-source, tool to help calculate CP502 increase in tax for amended estimated tax payments under LHDN in Malaysia"
+      />
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Tax Tools (Open-Source)&nbsp;
-        </p>
+        <Link
+          href="https://github.com/kovoor/tax-tools"
+          className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 underline"
+        >
+          Tax Tools (Open-Source)
+        </Link>
         <div className="lg:flex flex-row gap-2 justify-center align-middle items-center mt-10 sm:mt-0 hidden">
           Built in public by{" "}
           <a
