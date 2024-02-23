@@ -20,15 +20,16 @@ interface TagSEOProps {
 // This let you add default SEO tags to all pages, like /terms, /privacy, without rewrtting them all
 
 const appName = "Tax Tools"
-const domainName = "https://tax-tools.vercel.app/"
+const domainName = "tax-tools.vercel.app"
 
 const defaults = {
   title: `up to 50 characters | ${appName}`,
   description: "60 to 180 characters",
   keywords: `Some other keywords if needed`,
   og: {
-    title: `up to 50 characters | ${appName}`,
-    description: "60 to 180 characters",
+    title: `LHDN Tax Calculator - Calculate CP502 Increase in Tax Amended Tax`,
+    description:
+      "This is an open-source, tool to help calculate CP502 increase in tax for amended estimated tax payments under LHDN in Malaysia",
     image: `https://${domainName}/shareMain.png`,
     url: `https://${domainName}/`,
   },
